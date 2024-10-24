@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mushie's Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Mushie's Survey Form</h1>
+  <p id="description">You can give feedback about the website here</p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name">Name</label>
+    <input type="text" id="name" required placeholder="Enter your name">  
+
+    <label id="email-label" for="email">Email</label>
+    <input type="email" id="email" required placeholder="Enter your email">
+    
+    <label id="number-label" for="number">Age (optional)</label>
+    <input type="number" id="number" min="16" max="120" placeholder="Age">
+
+    <label for="dropdown">Select current role</label>
+    <select id="dropdown" required>
+      <option value="">Select current role</option>
+      <option value="student">Student</option>
+      <option value="businessman">Businessman</option>
+      <option value="worker">Worker</option>
+      <option value="prefer-not">Prefer Not To Say</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label>Would you recommend freeCodeCamp to a friend?</label>
+<div class="radio-group">
+  <div class="radio-item">
+    <input type="radio" name="recommend" value="Definitely" id="definitely" checked>
+    <label for="definitely">Agree</label>
+  </div>
+  <div class="radio-item">
+    <input type="radio" name="recommend" value="Maybe" id="maybe">
+    <label for="maybe">Maybe</label>
+  </div>
+  <div class="radio-item">
+    <input type="radio" name="recommend" value="Not Sure" id="not-sure">
+    <label for="not-sure">Disagree</label>
+  </div>
+</div>
+
+    <label>What would you like to see us build next time?</label>
+<div class="checkbox-group">
+  <div class="checkbox-item">
+    <input type="checkbox" name="improvement" value="cafe" id="cafe">
+    <label for="cafe">Cafe</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" name="improvement" value="restaurant" id="restaurant">
+    <label for="restaurant">Restaurant</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" name="improvement" value="services" id="services">
+    <label for="services">Services</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" name="improvement" value="appointment" id="appointment">
+    <label for="appointment">Appointment</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" name="improvement" value="gaming-community" id="gaming-community">
+    <label for="gaming-community">Gaming Community</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" name="improvement" value="sports" id="sports">
+    <label for="sports">Sports</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" name="improvement" value="videos" id="videos">
+    <label for="videos">Videos</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" name="improvement" value="city-meetups" id="city-meetups">
+    <label for="city-meetups">Blogs</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" name="improvement" value="additional-courses" id="additional-courses">
+    <label for="additional-courses">Additionals</label>
+  </div>
+</div>
+
+    <label for="comments">Any comments or suggestions?</label>
+    <textarea id="comments" placeholder="Enter your comment here.." rows="4" cols="30"></textarea>     
+
+    <input type="submit" id="submit" value="Submit">
+  </form>
+</body>
+</html>
